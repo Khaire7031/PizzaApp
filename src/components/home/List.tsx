@@ -1,4 +1,4 @@
-import { pizzaData } from "../../data";
+// import { pizzaData } from "../../data";
 import useCallApi from "../../hooks/useCallApi";
 
 interface ListProps {
