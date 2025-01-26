@@ -1,0 +1,59 @@
+// src/components/navbar/navbar.scss
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .menu {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #f2a900;
+            }
+        }
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .menu {
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .menu.open {
+            display: flex;
+        }
+
+        .toggle {
+            display: block;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}

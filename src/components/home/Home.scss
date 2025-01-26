@@ -1,0 +1,95 @@
+.pizza-container {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 0 auto;
+    // background: red;
+}
+
+.pizza-item {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: calc(33.333% - 20px);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .pizza-image {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .pizza-info {
+        padding: 20px;
+
+        .pizza-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .pizza-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .rating-stars {
+                display: flex;
+                gap: 5px;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    color: #fbbf24;
+                }
+
+                .star-inactive {
+                    color: #d1d5db;
+                }
+            }
+
+            .rating-text {
+                margin-left: 10px;
+                font-size: 0.875rem;
+                color: #4b5563;
+            }
+        }
+
+        .pizza-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart {
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            width: 100%;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #2563eb;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
