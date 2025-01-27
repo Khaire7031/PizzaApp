@@ -32,8 +32,8 @@ export default function Cart({ isOpen, onClose }: CartProps) {
                 {cartItems.length === 0 ? (
                     <p className="text-center text-gray-600 mt-10">Your cart is empty.</p>
                 ) : (
-                    cartItems.map((item) => (
-                        <div key={item.id} className="flex items-center gap-4 p-2 border-b border-gray-300">
+                    cartItems.map((item, index) => (
+                        <div key={index} className="flex items-center gap-4 p-2 border-b border-gray-300">
                             <img src={item.img} alt={item.name} className="w-16 h-16 rounded-lg object-cover" />
                             <div className="flex flex-row items-center justify-between w-full">
                                 <div>

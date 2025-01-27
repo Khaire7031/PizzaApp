@@ -12,6 +12,16 @@ const headers = {
 //     "x-rapidapi-host": "pizza-and-desserts.p.rapidapi.com",
 // };
 
+//     "x-rapidapi-key": "3dd9e03010mshf22dca0ab745c75p1e8fb2jsn46657c7d4d1d",
+//     "x-rapidapi-host": "pizza-and-desserts.p.rapidapi.com",
+// };
+
+
+// const headers = {
+//     "x-rapidapi-key": "61be99bf57mshc52c1dae1e4f9e1p124842jsn460a8ae0de98",
+//     "x-rapidapi-host": "pizza-and-desserts.p.rapidapi.com",
+// };
+
 const useCallApi = ({ url }: { url: string }) => {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState<boolean>(true);
