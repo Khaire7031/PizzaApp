@@ -23,7 +23,7 @@ export default function Home({ pizzaSearch }: { pizzaSearch: string }) {
     };
 
     return (
-        <div className="py-5">
+        <div className="py-5" id="tab">
             {!pizzaSearch && <Carousel />}
             <div className="flex justify-start px-5 lg:px-56 space-x-5 mb-5">
                 <button
